@@ -9,6 +9,19 @@ plugins {
     // Apply the foojay-resolver plugin to allow automatic download of JDKs
     id("org.gradle.toolchains.foojay-resolver-convention") version "0.8.0"
 }
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()  // Tambahkan ini untuk Google Maven Repository
+        mavenCentral()
+    }
+}
 
+dependencyResolutionManagement {
+    repositories {
+        google()  // Tambahkan ini juga
+        mavenCentral()
+    }
+}
 rootProject.name = "Snapattend"
 include("app")
