@@ -1,13 +1,14 @@
 plugins {
-    id("com.android.application") version "8.1.0"
-    kotlin("android") version "1.8.0"
+    id("com.android.application")
+    kotlin("android")
 }
 
 android {
+    namespace = "com.example.snapapp"  // Ganti dengan nama package kamu
     compileSdk = 33
 
     defaultConfig {
-        applicationId = "com.example.snapapp"  // Ganti sesuai package name kamu
+        applicationId = "com.example.snapapp"  // Ganti dengan nama package kamu
         minSdk = 21
         targetSdk = 33
         versionCode = 1
